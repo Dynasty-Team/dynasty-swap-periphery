@@ -5,17 +5,17 @@ import '@uniswap/lib/contracts/libraries/Babylonian.sol';
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
 
 import '../interfaces/IERC20.sol';
-import '../interfaces/IDynastyRouter01.sol';
+import '../interfaces/IPancakeRouter01.sol';
 import '../libraries/SafeMath.sol';
-import '../libraries/DynastyLibrary.sol';
+import '../libraries/PancakeLibrary.sol';
 
 contract ExampleSwapToPrice {
     using SafeMath for uint256;
 
-    IDynastyRouter01 public immutable router;
+    IPancakeRouter01 public immutable router;
     address public immutable factory;
 
-    constructor(address factory_, IDynastyRouter01 router_) public {
+    constructor(address factory_, IPancakeRouter01 router_) public {
         factory = factory_;
         router = router_;
     }
@@ -62,7 +62,7 @@ contract ExampleSwapToPrice {
         bool aToB;
         uint256 amountIn;
         {
-            (uint256 reserveA, uint256 reserveB) = DynastyLibrary.getReserves(factory, tokenA, tokenB);
+            (uint256 reserveA, uint256 reserveB) = PancakeLibrary.getReserves(factory, tokenA, tokenB);
             (aToB, amountIn) = computeProfitMaximizingTrade(
                 truePriceTokenA, truePriceTokenB,
                 reserveA, reserveB
