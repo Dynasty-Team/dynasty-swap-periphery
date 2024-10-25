@@ -1,6 +1,6 @@
-# Pancake Router
+# Dynasty Router
 
-### Bsc-Test
+### Dny-Test
 
 The following assumes the use of `node@>=10`.
 

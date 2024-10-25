@@ -1,5 +1,5 @@
 {
-  "contractName": "IPancakeMigrator",
+  "contractName": "IDynastyMigrator",
   "abi": [
     {
       "inputs": [

@@ -1,5 +1,5 @@
 {
-  "contractName": "PancakeMigrator",
+  "contractName": "DynastyMigrator",
   "abi": [
     {
       "inputs": [

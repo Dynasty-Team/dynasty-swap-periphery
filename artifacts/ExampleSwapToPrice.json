@@ -9,7 +9,7 @@
           "type": "address"
         },
         {
-          "internalType": "contract IPancakeRouter01",
+          "internalType": "contract IDynastyRouter01",
           "name": "router_",
           "type": "address"
         }
@@ -74,7 +74,7 @@
       "name": "router",
       "outputs": [
         {
-          "internalType": "contract IPancakeRouter01",
+          "internalType": "contract IDynastyRouter01",
           "name": "",
           "type": "address"
         }
