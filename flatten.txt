@@ -918,7 +918,7 @@ library PancakeLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'0x06f52364610fecab86b0dfce3d044ef5975cf7636a065775f8f285136f2ebaed' // init code hash
+                hex'06f52364610fecab86b0dfce3d044ef5975cf7636a065775f8f285136f2ebaed' // init code hash
             ))));
     }
 
